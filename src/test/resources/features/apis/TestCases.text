@@ -1,0 +1,28 @@
+Here are some proposed test cases for the Swagger Petstore API:
+
+GET /pets
+Validate that the response status is 200 OK.
+Validate the structure of the returned data (e.g., it contains id, name, category, etc.).
+
+POST /pets
+Validate that a new pet can be added successfully.
+Validate the response status is 201 Created.
+Validate that the returned pet data matches the input data.
+
+GET /pets/{id}
+Validate that retrieving a pet by ID returns the correct pet.
+Validate the response status is 200 OK.
+Validate that a non-existent pet ID returns a 404 Not Found status.
+
+PUT /pets/{id}
+Validate that updating an existing pet's details is successful.
+Validate that the response status is 200 OK.
+Validate that the updated data is reflected in a subsequent GET request.
+
+DELETE /pets/{id}
+Validate that a pet can be deleted successfully.
+Validate that the response status is 204 No Content.
+Validate that retrieving the deleted pet returns a 404 Not Found status.
+
+GET /pets with query parameters
+Validate that filtering pets by status returns the correct results.
